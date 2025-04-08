@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CTF Military Message Challenges</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>CTF Military Message Challenges</h1>
+    <div class="group-members">
+        <p>Group Members: Garrett Gmeiner</p>
+    </div>
+</header>
+<div class="container">
+    <!-- Challenge 1: Vigenère Cipher -->
+    <section class="challenge">
+        <h2>Challenge 1: Encrypted Military Message</h2>
+        <p>The Military commander sent you a message regarding the upcoming mission.
+            However, he encrypted it so the enemy would not be able to find it useful.
+        </p>
+        <p><strong>Message:</strong> Hi Mhglgw Og Oeib!</p>
+        <button onclick="toggleHint('hint1')" class="hint-toggle-btn">Reveal Hint</button>
+        <div id="hint1" style="display: none; margin-top: 10px;">
+            <p><strong>Hint:</strong> Key: <em>LEMON</em></p>
+        </div>
+        <p>Enter the decoded message below:</p>
+        <input type="text" id="decoded1" placeholder="Enter decoded message">
+        <button onclick="checkChallenge1()">Submit</button>
+        <!-- Permanent status area; remains on screen when correctly answered -->
+        <div id="status1"></div>
+    </section>
+
+    <!-- Challenge 2: Morse Code Message (hidden until Challenge 1 is solved) -->
+    <section id="challenge2" class="challenge" style="display: none;">
+        <h2>Challenge 2: Encoded Military Communication</h2>
+        <p>You are receiving a message from the military units on the front lines.
+            Decode it so you can act accordingly…
+        </p>
+        <p><strong>Message:</strong> .-- . / -. . . -.. / .... . .-.. .--. / .- ... / ... --- --- -.
+            / .- ... / .--. --- ... ... .. -... .-.. . -.-.!</p>
+        <button onclick="toggleHint('hint2')" class="hint-toggle-btn">Reveal Hint</button>
+        <div id="hint2" style="display: none; margin-top: 10px;">
+            <p><strong>Hint:</strong> Decode the dots and dashes using standard Morse Code mappings.</p>
+        </div>
+        <p>Enter the decoded message below:</p>
+        <input type="text" id="decoded2" placeholder="Enter decoded message">
+        <button onclick="checkChallenge2()">Submit</button>
+        <!-- Permanent status area -->
+        <div id="status2"></div>
+    </section>
+
+    <!-- Documents Section -->
+    <section class="documents">
+        <h2 class="documents-title">Documents</h2>
+        <div class="button-boxes">
+            <div class="card">
+                <a href="pdfs/Slideshow.pdf" target="_blank">
+                    <div class="card-content">
+                        <embed src="pdfs/Slideshow.pdf" alt="PDF Thumbnail" class="card-image">
+                        <div class="plan-button">View Slideshow</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    // Toggle hint visibility; pass the element ID
+    function toggleHint(id) {
+      var hintDiv = document.getElementById(id);
+      if (hintDiv.style.display === "none" || hintDiv.style.display === "") {
+        hintDiv.style.display = "block";
+      } else {
+        hintDiv.style.display = "none";
+      }
+    }
+
+    // Check the answer for Challenge 1 (Vigenère decryption)
+    function checkChallenge1() {
+      var userAnswer = document.getElementById("decoded1").value.trim().toUpperCase();
+      var expected = "WE ATTACK AT DAWN!";  // expected decoded message
+      if (userAnswer === expected) {
+        document.getElementById("status1").innerText = "Challenge 1 captured! Congratulations!";
+        document.getElementById("status1").style.color = "lime";
+        // Reveal Challenge 2 after Challenge 1 is solved
+        document.getElementById("challenge2").style.display = "block";
+      } else {
+        document.getElementById("status1").innerText = "Incorrect answer. Try again!";
+        document.getElementById("status1").style.color = "red";
+      }
+    }
+
+    // Check the answer for Challenge 2 (Morse Code decryption)
+    function checkChallenge2() {
+      var userAnswer = document.getElementById("decoded2").value.trim().toUpperCase();
+      var expected = "WE NEED HELP AS SOON AS POSSIBLE!";  // expected decoded Morse message
+      if (userAnswer === expected) {
+        document.getElementById("status2").innerText = "Challenge 2 captured! Congratulations!";
+        document.getElementById("status2").style.color = "lime";
+      } else {
+        document.getElementById("status2").innerText = "Incorrect answer. Try again!";
+        document.getElementById("status2").style.color = "red";
+      }
+    }
+</script>
+</body>
+</html>

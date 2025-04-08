@@ -1,0 +1,174 @@
+/* Base styles for the challenge page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+/* Group Members Section */
+.group-members {
+  margin-top: 10px;
+}
+
+.group-members p {
+  margin: 0;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Challenge Section Styles */
+.challenge {
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid #333;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+}
+
+.challenge h2 {
+  color: #ffcc00;
+}
+
+/* Input and button styles for challenges */
+.challenge input[type="text"] {
+  padding: 10px;
+  font-size: 18px;
+  width: 70%;
+  max-width: 400px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.challenge button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.challenge button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Hint button styles */
+.hint-toggle-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.hint-toggle-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Permanent status message styling */
+#status1, #status2 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Documents Section styles (if needed) */
+.documents-title {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #ffcc00;
+}
+
+.button-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 80px;
+}
+
+/* PDF Card styling */
+.card {
+  width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  padding: 20px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.plan-button {
+  padding: 25px 50px;
+  background-color: lightgray;
+  background-size: cover;
+  background-position: center;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.plan-button:hover {
+  opacity: 0.8;
+  background-color: black;
+  color: white;
+}
