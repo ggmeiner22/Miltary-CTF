@@ -36,9 +36,8 @@ def challenge2():
 
 def main():
     print("Welcome to the Military Message Challenges!\n")
-    challenge1()  # Ask challenge 1 until solved.
-    challenge2()  # Ask challenge 2 after challenge 1 is solved.
-    print("\nAll challenges completed. Well done!")
+    challenge1()
+    challenge2()
+    print("\nAll Messages Decrypted. Well done!")
 
-if __name__ == "__main__":
-    main()
+main()
