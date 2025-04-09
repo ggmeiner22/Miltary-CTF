@@ -1,8 +1,7 @@
-/* Base styles using crimson and grey */
 body {
   font-family: Arial, sans-serif;
-  background-color: #F5F5F5;  /* a very light grey background */
-  color: #333333;           /* dark grey text */
+  background-color: #F5F5F5;  /* light grey background */
+  color: #333333;           /* dark grey */
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -75,7 +74,7 @@ header h1 {
 }
 
 .challenge button:hover {
-  background-color: #B22222;  /* a slightly darker crimson */
+  background-color: #B22222;  /* dark crimson */
 }
 
 /* Hint button styles */

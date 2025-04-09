@@ -14,7 +14,7 @@
     </div>
 </header>
 <div class="container">
-    <!-- Challenge 1: Vigenère Cipher -->
+    <!-- Challenge 1 -->
     <section class="challenge">
         <h2>Challenge 1: Encrypted Military Message</h2>
         <p>The Military commander sent you a message regarding the upcoming mission.
@@ -28,11 +28,11 @@
         <p>Enter the decoded message below:</p>
         <input type="text" id="decoded1" placeholder="Enter decoded message">
         <button onclick="checkChallenge1()">Submit</button>
-        <!-- Permanent status area; remains on screen when correctly answered -->
+        <!-- Remains on screen when correctly answered -->
         <div id="status1"></div>
     </section>
 
-    <!-- Challenge 2: Morse Code Message (hidden until Challenge 1 is solved) -->
+    <!-- Challenge 2 -->
     <section id="challenge2" class="challenge" style="display: none;">
         <h2>Challenge 2: Encoded Military Communication</h2>
         <p>You are receiving a message from the military units on the front lines.
@@ -68,7 +68,7 @@
 </div>
 
 <script>
-    // Toggle hint visibility; pass the element ID
+    // Toggle hint visibility
     function toggleHint(id) {
       var hintDiv = document.getElementById(id);
       if (hintDiv.style.display === "none" || hintDiv.style.display === "") {
@@ -78,10 +78,10 @@
       }
     }
 
-    // Check the answer for Challenge 1 (Vigenère decryption)
+    // Check the answer for Challenge 1
     function checkChallenge1() {
       var userAnswer = document.getElementById("decoded1").value.trim().toUpperCase();
-      var expected = "WE ATTACK AT DAWN!";  // expected decoded message
+      var expected = "WE ATTACK AT DAWN!";
       if (userAnswer === expected) {
         document.getElementById("status1").innerText = "Message 1 decrypted! Congratulations!";
         document.getElementById("status1").style.color = "lime";
@@ -93,10 +93,10 @@
       }
     }
 
-    // Check the answer for Challenge 2 (Morse Code decryption)
+    // Check the answer for Challenge 2
     function checkChallenge2() {
       var userAnswer = document.getElementById("decoded2").value.trim().toUpperCase();
-      var expected = "WE NEED HELP AS SOON AS POSSIBLE!";  // expected decoded Morse message
+      var expected = "WE NEED HELP AS SOON AS POSSIBLE!";
       if (userAnswer === expected) {
         document.getElementById("status2").innerText = "Message 2 decrypted! Congratulations!";
         document.getElementById("status2").style.color = "lime";
