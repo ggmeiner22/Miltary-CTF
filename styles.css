@@ -1,24 +1,24 @@
-/* Base styles for the challenge page */
+/* Base styles using crimson and grey */
 body {
   font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #F5F5F5;  /* a very light grey background */
+  color: #333333;           /* dark grey text */
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 
 header {
-  background-color: #1f1f1f;
+  background-color: #DC143C;  /* crimson */
   padding: 20px;
   text-align: center;
-  border-bottom: 1px solid #333;
+  border-bottom: 2px solid #A9A9A9;  /* dark grey border */
 }
 
 header h1 {
   margin: 0;
   font-size: 2rem;
-  color: #ffffff;
+  color: #FFFFFF;  /* white text */
 }
 
 /* Group Members Section */
@@ -29,7 +29,7 @@ header h1 {
 .group-members p {
   margin: 0;
   font-size: 1rem;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .container {
@@ -42,13 +42,13 @@ header h1 {
 .challenge {
   margin-top: 40px;
   padding: 20px;
-  border: 1px solid #333;
-  background-color: #1f1f1f;
+  border: 1px solid #A9A9A9;  /* dark grey border */
+  background-color: #EFEFEF;    /* light grey background */
   border-radius: 5px;
 }
 
 .challenge h2 {
-  color: #ffcc00;
+  color: #DC143C;  /* crimson */
 }
 
 /* Input and button styles for challenges */
@@ -58,41 +58,41 @@ header h1 {
   width: 70%;
   max-width: 400px;
   margin: 10px 0;
-  border: 1px solid #ccc;
+  border: 1px solid #A9A9A9;  /* dark grey */
   border-radius: 5px;
 }
 
 .challenge button {
   padding: 10px 20px;
   font-size: 18px;
-  background-color: lightgray;
+  background-color: #DC143C;  /* crimson */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 10px;
+  color: #FFFFFF; /* white text */
 }
 
 .challenge button:hover {
-  background-color: black;
-  color: white;
+  background-color: #B22222;  /* a slightly darker crimson */
 }
 
 /* Hint button styles */
 .hint-toggle-btn {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: lightgray;
+  background-color: #DC143C;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 10px;
+  color: #FFFFFF;
 }
 
 .hint-toggle-btn:hover {
-  background-color: black;
-  color: white;
+  background-color: #B22222;
 }
 
 /* Permanent status message styling */
@@ -102,13 +102,13 @@ header h1 {
   font-weight: bold;
 }
 
-/* Documents Section styles (if needed) */
+/* Documents Section styles */
 .documents-title {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 20px;
   font-size: 2rem;
-  color: #ffcc00;
+  color: #DC143C;
 }
 
 .button-boxes {
@@ -124,11 +124,11 @@ header h1 {
 /* PDF Card styling */
 .card {
   width: 400px;
-  border: 1px solid #ddd;
+  border: 1px solid #A9A9A9;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -152,12 +152,13 @@ header h1 {
   margin-bottom: 15px;
 }
 
+/* Button styling for the cards */
 .plan-button {
   padding: 25px 50px;
-  background-color: lightgray;
+  background-color: #DC143C;
   background-size: cover;
   background-position: center;
-  color: black;
+  color: #FFFFFF;
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
@@ -169,6 +170,6 @@ header h1 {
 
 .plan-button:hover {
   opacity: 0.8;
-  background-color: black;
-  color: white;
+  background-color: #B22222;
+  color: #FFFFFF;
 }

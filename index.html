@@ -83,7 +83,7 @@
       var userAnswer = document.getElementById("decoded1").value.trim().toUpperCase();
       var expected = "WE ATTACK AT DAWN!";  // expected decoded message
       if (userAnswer === expected) {
-        document.getElementById("status1").innerText = "Challenge 1 captured! Congratulations!";
+        document.getElementById("status1").innerText = "Message 1 decrypted! Congratulations!";
         document.getElementById("status1").style.color = "lime";
         // Reveal Challenge 2 after Challenge 1 is solved
         document.getElementById("challenge2").style.display = "block";
@@ -98,7 +98,7 @@
       var userAnswer = document.getElementById("decoded2").value.trim().toUpperCase();
       var expected = "WE NEED HELP AS SOON AS POSSIBLE!";  // expected decoded Morse message
       if (userAnswer === expected) {
-        document.getElementById("status2").innerText = "Challenge 2 captured! Congratulations!";
+        document.getElementById("status2").innerText = "Message 2 decrypted! Congratulations!";
         document.getElementById("status2").style.color = "lime";
       } else {
         document.getElementById("status2").innerText = "Incorrect answer. Try again!";
